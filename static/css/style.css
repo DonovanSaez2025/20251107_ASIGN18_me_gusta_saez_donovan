@@ -1,0 +1,98 @@
+/* Resetear estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "TikTok Sans", sans-serif;
+    color: #000;
+}
+
+.navbar {
+    background-color: #3f3f3f;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.container {
+    width: 1065px;
+    margin: 17px auto;
+}
+
+.container h2 {
+    margin-left: 278px;
+    margin-bottom: 17px;
+}
+
+.row {
+    /* Flesbox */
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-profile {
+    background-color: #fff;
+    border: 2px solid #3f3f3f;
+    border-radius: 10px;
+    padding: 40px 40px 30px 40px;
+    text-align: center;
+}
+
+.card-profile img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card-profile h3 {
+    margin: 15px 0;
+}
+
+.card-profile button {
+    background-color: #2b9dc0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 4px 20px;
+}
+
+.card-post {
+    background-color: #f4f4f4;
+    border: 2px solid #3f3f3f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-like {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+}
+
+.card-post h3 {
+    margin-bottom: 13px;
+}
+
+.card-like button {
+    background-color: #ffd06b;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+button {
+    cursor: pointer;
+}

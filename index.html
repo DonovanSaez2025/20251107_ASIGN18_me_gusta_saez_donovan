@@ -1,4 +1,84 @@
+<!-- Donovan Sáez 3°C 11/07/2025 un pequeño sitio en el que podremos dar y quitar like -->
 <!DOCTYPE html>
 <html lang="es">
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Autor del documento -->
+    <meta name="author" content="donovansaez@liceovvh.cl">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Título de la página -->
+    <title>Me Gusta</title>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <h1>Social Like</h1>
+    </nav>
+
+    <!-- Container (Contenedor) -->
+    <div class="container">
+        <!-- Título -->
+        <h2>Últimas publicaciones</h2>
+        <!-- Row (Fila) -->
+        <div class="row">
+            <!-- Columna 1 -->
+            <div class="col-1">
+                <div class="card-profile">
+                    <img src="static/images/profile.jpg" alt="Ben Birdie">
+                    <h3>Ben Birdie</h3>
+                    <button>Mi perfil</button>
+                </div>
+            </div>
+            <!-- Columna 2 -->
+            <div class="col-2">
+                <div class="card-post">
+                    <div class="card-content">
+                        <h3>Jack Bunny</h3>
+                        <span>Acabo de configurar este nuevo <a href="#">bot de Discord</a>, cuéntenme que opinan
+                            ustedes.</span>
+                    </div>
+                    <div class="card-like">
+                        <p><span id="like1">0</span> like(s)</p>
+                        <button onclick="darLike1()">Like</button>
+                    </div>
+                </div>
+                <div class="card-post">
+                    <div class="card-content">
+                        <h3>Fats Swallow</h3>
+                        <span>Acabo de leer este <a href="#">nuevo cómic</a>. Denle un vistazo.</span>
+                    </div>
+                    <div class="card-like">
+                        <p><span id="like2">0</span> like(s)</p>
+                        <button onclick="darLike2()">Like</button>
+                    </div>
+                </div>
+                <div class="card-post">
+                    <div class="card-content">
+                        <h3>Al Goatson</h3>
+                        <span>No puedo dejar de escuchar este <a href="#">Album</a>. ¿A quién más le gusta?</span>
+                    </div>
+                    <div class="card-like">
+                        <p><span id="like3">0</span> like(s)</p>
+                        <button onclick="darLike3()">Like</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="static/js/script.js"></script>
+</body>
+
 </html>
